@@ -1,25 +1,20 @@
 ---
 abstract: 'Recursively merge two or more hashes, simply'
 author:
-  - 'Robert Krimen, C<< <rkrimen at cpan.org> >>'
+  - 'Robert Krimen <robertkrimen@gmail.com>'
 build_requires:
   Test::Deep: 0
   Test::Most: 0
-distribution_type: module
-generated_by: 'Module::Install version 0.79'
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+generated_by: 'Dist::Zilla version 2.101170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Hash-Merge-Simple
-no_index:
-  directory:
-    - inc
-    - t
-recommends:
+recommends: {}
+requires:
   Clone: 0
   Storable: 0
-resources:
-  license: http://dev.perl.org/licenses/
-  repository: http://github.com/robertkrimen/hash-merge-simple/tree/master
-version: 0.04
+version: 0.05
