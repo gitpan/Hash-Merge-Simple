@@ -1,15 +1,16 @@
 package Hash::Merge::Simple;
 BEGIN {
-  $Hash::Merge::Simple::VERSION = '0.05';
+  $Hash::Merge::Simple::VERSION = '0.051';
 }
 # ABSTRACT: Recursively merge two or more hashes, simply
 
 use warnings;
 use strict;
 
-use vars qw/@ISA @EXPORT_OK/;
-@ISA = qw/Exporter/;
-@EXPORT_OK = qw/merge clone_merge dclone_merge/;
+use vars qw/ @ISA @EXPORT_OK /;
+require Exporter;
+@ISA = qw/ Exporter /;
+@EXPORT_OK = qw/ merge clone_merge dclone_merge /;
 
 
 # This was stoled from Catalyst::Utils... thanks guys!
@@ -67,7 +68,7 @@ Hash::Merge::Simple - Recursively merge two or more hashes, simply
 
 =head1 VERSION
 
-version 0.05
+version 0.051
 
 =head1 SYNOPSIS
 
@@ -170,7 +171,7 @@ Yuval Kogman C<nothingmuch@woobling.org>
 
 =head1 AUTHOR
 
-  Robert Krimen <robertkrimen@gmail.com>
+Robert Krimen <robertkrimen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
